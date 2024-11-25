@@ -386,7 +386,7 @@ Resources:
     Properties:
       CodeUri: functions/batch_submit/
       Handler: batch_submit.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.13
       Timeout: 20
       Environment:
         Variables:
@@ -401,7 +401,7 @@ Resources:
     Properties:
       CodeUri: functions/callback_lambda/
       Handler: app.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.13
       Timeout: 25
       Role: !GetAtt LambdaNotifyStepFunctionRole.Arn
 
